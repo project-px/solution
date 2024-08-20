@@ -1,0 +1,38 @@
+.profile.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  padding-bottom: 48px;
+}
+
+.profile.main > a {
+  margin-bottom: 16px;
+}
+
+.profile.main > h1 {
+  margin-bottom: 4px;
+}
+
+.profile.main > p {
+  margin-bottom: 16px;
+}
+
+.profile {
+  border-bottom: var(--border-solid);
+}
+
+.profile > h1 {
+  font-size: var(--font-size-l);
+  font-weight: var(--text-bold);
+  transition: color var(--transition);
+}
+
+.profile > h1:hover {
+  color: var(--c-2-primary);
+}
+
+.profile:not(.main) {
+  margin-bottom: 12px;
+  padding-bottom: 24px;
+}

@@ -1,0 +1,107 @@
+#sidebar > div {
+  position: sticky;
+  position: -webkit-sticky;
+  top: calc(var(--header-1-height) + 120px);
+}
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-img {
+  width: 48px;
+  height: 48px;
+  padding: 3px;
+  display: block;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: border-color var(--transition);
+}
+
+.profile-img:hover {
+  border-color: var(--c-1-primary);
+}
+
+.profile-info {
+  line-height: var(--line-h-m);
+}
+
+.profile-title {
+  font-weight: 700;
+  transition: color var(--transition);
+}
+
+.profile-title:hover,
+.profile-title:active {
+  color: var(--c-1-primary);
+}
+
+.profile-id {
+  color: var(--color-font-sub);
+  letter-spacing: 0.5px;
+}
+
+.profile-desc {
+  position: relative;
+  margin-left: calc(48px + 12px);
+  padding: 4px 0;
+  font-style: italic;
+  line-height: var(--line-h-s);
+  letter-spacing: 0.3px;
+}
+
+.profile-desc::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  border-top-left-radius: var(--round);
+  border-top-right-radius: var(--round);
+  border-bottom-left-radius: var(--round);
+  border-bottom-right-radius: var(--round);
+  left: calc(-48px / 2 - 12px - 1px);
+  background-color: var(--color-border);
+  transition: background-color var(--transition);
+}
+
+.profile-desc:empty::before {
+  display: none;
+}
+
+.profile-setting-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  padding: 6px;
+  border: var(--border-solid);
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  transition: all var(--transition);
+}
+
+.profile-setting-btn:hover {
+  transform: rotate(90deg);
+}
+
+.profile-setting-btn svg {
+  transition: color var(--transition);
+}
+
+.profile-setting-btn:hover {
+  border-color: var(--c-1-primary);
+}
+
+.profile-setting-btn:hover svg {
+  color: var(--c-1-primary);
+}
+
+@media screen and (max-width: 960px) {
+  #sidebar {
+    margin-bottom: 64px;
+  }
+}

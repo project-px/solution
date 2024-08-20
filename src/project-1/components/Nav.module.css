@@ -1,0 +1,36 @@
+#nav {
+  margin-top: 24px;
+  padding: 16px;
+  border: var(--border-solid);
+  border-radius: var(--round);
+  background-color: var(--color-content-sub);
+  transition: all var(--transition);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all var(--transition);
+  overflow: hidden;
+}
+
+.nav-btn:hover {
+  background-color: var(--c-1-primary-50);
+}
+
+.nav-btn:hover svg {
+  color: var(--c-1-primary);
+}

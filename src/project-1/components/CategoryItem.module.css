@@ -1,0 +1,19 @@
+.category-btn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  border-radius: var(--round-xl);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.category-btn:hover {
+  color: var(--c-1-primary);
+  background-color: var(--c-1-primary-50);
+}
+
+.category-btn:hover svg {
+  color: var(--c-1-primary);
+}

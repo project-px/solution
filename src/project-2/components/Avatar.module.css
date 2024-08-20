@@ -1,0 +1,28 @@
+.avatar:link,
+.avatar:visited {
+  width: 84px;
+  display: block;
+  padding: 3px;
+  aspect-ratio: 1;
+  border: var(--border-solid);
+  border-radius: 50%;
+  transition: border-color var(--transition);
+}
+
+.avatar.small:link,
+.avatar.small:visited {
+  width: 48px;
+}
+
+.avatar:hover,
+.avatar:active {
+  border-color: var(--c-2-primary);
+}
+
+.avatar:link img,
+.avatar:visited img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}

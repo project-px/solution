@@ -1,0 +1,11 @@
+.btn {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: var(--border-solid);
+  background-color: var(--color-bg);
+  transition: all var(--transition);
+}

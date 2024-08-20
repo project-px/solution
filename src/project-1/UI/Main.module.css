@@ -1,0 +1,23 @@
+#main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: var(--sb-1-width) var(--content-1-width);
+  column-gap: 84px;
+  margin: 120px auto;
+  margin-left: calc((var(--sb-1-width) + 84px) * -1);
+}
+
+@media screen and (max-width: 1340px) {
+  #main {
+    margin-left: unset;
+    margin: 120px auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #main {
+    width: 90%;
+    max-width: var(--content-1-width);
+    display: block;
+  }
+}

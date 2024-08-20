@@ -1,0 +1,12 @@
+#app {
+  width: var(--content-2-width);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  position: relative;
+  border-left: var(--border-solid);
+  border-right: var(--border-solid);
+}
